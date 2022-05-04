@@ -3,3 +3,10 @@
 tail -n 40 file1.txt >file2.txt; head -n 10 file2.txt > file3.txt;
 
 sed -i 's/коко/куку/g' file2.txt; grep 'куку' file2.txt | head -n 3 > file3.txt; uniq -c file3.txt
+
+### Первым делом нужно выдать скрипту права на чтение, запись исполнение:
+
+chmod +rwx script.sh
+### Запустите скрипт с помощью
+
+./script.sh
