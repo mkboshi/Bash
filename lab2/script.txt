@@ -1,0 +1,10 @@
+#! /bin/bash
+name=shibo
+
+echo "my name is $name" >> file.txt
+
+file="file.txt"
+find . -name "*.txt"
+echo "Searching..."
+echo "Done"
+file $file
